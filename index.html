@@ -4,14 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WKP9</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: gainsboro;
+        }
+
+        body {
+            max-width: 1097px;
+            margin-inline-start: auto;
+            margin-inline-end: auto;
+        }
+
+        .movie {
+            margin-block-start: 16px;
+            background-color: white;
+            padding: 48px;
+            border-radius: 10px;
+        }
+
+        .heading {
+            display: flex;
+            flex-direction: row;
+        }
+
+        h2 {
+            margin: 0;
+        }
+
+        .description {
+            margin-block-start: 16px;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .release_date {
+            margin-inline-start: 32px;
+            margin-block-start: 8px;
+        }
+
+        .score {
+            margin-block-start: 8px;
+            margin-inline-start: 700px;
+        }
+
+
+        .responsible {
+            display: flex;
+            font-weight: 700;
+            margin-block-start: 16px;
+        }
+
+        .producer {
+            margin-inline-start: 32px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Movie lists</h1>
+        <h1>Studio Ghibli Movies</h1>
+        <p>Ranked from the best, to worst.</p>
     </header>
 
-    <div class="movies"></div>
-    
-    <script src="/script.js"></script>
+    <div class="container">
+        <div class="movies"></div>
+    </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>
