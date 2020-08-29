@@ -1,6 +1,7 @@
+// Grabed the element from the html page which you want to push the data in.
 const movieList = document.querySelector('.movies');
 
-
+// Fetch all the data from the url that is given in readme.md file.
 async function fetchMovie() {
     const response = await fetch('https://ghibliapi.herokuapp.com/films', {
         headers: {
@@ -9,12 +10,18 @@ async function fetchMovie() {
     });
 
     const data = await response.json();
+    // To sort the rt_score from the highest to the lowest.
+    data.sort(function(a, b) {
+        return b.rt_score - a.rt_score;
+    })
     return data;
 }
 
 
+// An async function to display all the movies into html.
 async function displayMovies() {
     const movies = await fetchMovie();
+    // Generate the data into html.
     const html = movies.map(movie => {
         return `
         <article class="movie">
@@ -33,8 +40,8 @@ async function displayMovies() {
         </article>
         `;
     });
-    console.log(html);
     movieList.innerHTML = html.join('');
 }
 
+// Call the function.
 displayMovies();
