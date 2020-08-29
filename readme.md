@@ -8,3 +8,5 @@
 
 1. I created an async function again and created the html to get all of the data working in the html page, and when that is done I sort the rt_score in the first function that I have created.
 
+1. Added an extra delete button, added its styles in styles.css and javascript code, event delegation to the script.js.
+

@@ -14,6 +14,12 @@ h1 {
     text-shadow: 1px 1px 1px yellow;
 }
 
+.category {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
 .movie {
     margin-block-start: 32px;
     background-color: white;
@@ -67,4 +73,14 @@ p {
 
 .producer {
     margin-inline-start: 32px;
+}
+
+.delete {
+    margin-block-start: 32px;
+    padding: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: deeppink;
+    padding-inline-start: 32px;
+    padding-inline-end: 32px;
 }

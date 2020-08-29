@@ -1,5 +1,6 @@
 // Grabed the element from the html page which you want to push the data in.
 const movieList = document.querySelector('.movies');
+let movies = [];
 
 // Fetch all the data from the url that is given in readme.md file.
 async function fetchMovie() {
@@ -37,6 +38,7 @@ async function displayMovies() {
                 <p class="director">${movie.director}</p>
                 <p class="producer">${movie.producer}</p>
             </div>
+            <button class="delete">Delete</button>
         </article>
         `;
     });
@@ -45,3 +47,16 @@ async function displayMovies() {
 
 // Call the function.
 displayMovies();
+
+
+// Handle the delete button.
+const handleDelete = (event) => {
+    if (event.target.closest('button.delete')) {
+        const parentElement = document.querySelector('.movies');
+        const childElement = event.target.closest('.movie');
+         parentElement.removeChild(childElement);
+    }
+};
+
+// An event delegation for the delete.
+window.addEventListener('click', handleDelete);
