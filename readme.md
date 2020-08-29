@@ -1,19 +1,10 @@
 # WKP9
 
-Hey team!
-After a major graded project, let's do something different, and a little bit more straightforward.
-Today we’re going to build a list of the Studio Ghibli Movies, ranked from best to worst. If you haven’t seen any of those, I suggest you to look on the Onja hard drive! (after completing the project of course). They are amazing ✨
+## Work that I did in this poject.
 
-The website will look similar to this :
+1. I created a file for HTML, and added some elements in it, such as header of the whole page and a div to put the data in.
 
-![assets/ghibli.png](assets/ghibli.png)
+1. I created a script file for all of javascript. I grabbed the div which I have created in the html page and then created an async function to fetch the data from the url that has given it the instruction. 
 
-You will fetch the data from this URL [https://ghibliapi.herokuapp.com/films](https://ghibliapi.herokuapp.com/films)
+1. I created an async function again and created the html to get all of the data working in the html page, and when that is done I sort the rt_score in the first function that I have created.
 
-and display the result in the HTML. The film needs to be sorted depending on their rt_score!
-
-There is a lot of data in a film object, use whatever attribute you need.
-
-Feel free to add some beautiful styling to your website when you're done fetching and sorting the data.
-
-Good luck 💻
